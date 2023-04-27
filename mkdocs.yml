@@ -1,0 +1,11 @@
+site_name: ELIXIR-NO Training docs
+markdown_extensions:
+    - admonition
+
+nav:
+    - Home: index.md
+
+theme: readthedocs
+
+extra_css:
+    - css/custom.css
