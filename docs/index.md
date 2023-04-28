@@ -1,4 +1,52 @@
-# EBP-Nor Database manual
+---
+name: Earth BioGenome Project Norway | EBP-Nor Database manual
+description: Documentation and tutorial for using the EBP-Nor database
+keywords: 
+    - Earth BioGenome Project
+    - EBP-Nor
+    - ELIXIR
+    - ELIXIR-NO
+    - ELIXIR Norway
+    - Biodiversity
+    - Biodiversity data
+    - Isolates
+    - Population genomics
+    - Species
+    - Specimens
+    - Database entry metadata
+    - Database field name
+    - Filtering
+    - Record
+    - Record management
+    - Relational database
+    - Sequence attribute
+    - Species name
+    - TSV
+about:
+    - Biodiversity data
+    - http://edamontology.org/data_3707
+abstract: "The EBP-Nor database is a relational database for the Earth BioGenome Project focusing on Norwegian and Nordic eukaryotic species. The database consists of 5 linked tables, each of which is a separate spreadsheet with dedicated attribute columns covering species, isolates, specimens, sequencing runs, and assembled genomes record types. The contextual biodata framework (CBF) provides database functionalities, including linking the databases as a relational database. This tutorial documents CBF functionalities from the writer's perspective."
+author: Terje Klemetsen (ELIXIR Norway)
+in_language: en-UK
+teaches: 
+    - The user will be able to describe the structure of the relational database.
+    - The user will be able to request a user role in the EBP-Nor database.
+    - The user will be able to navigate the main functionalities provided by the contextual biodata framework.
+    - The user will be able to search the EBP-Nor database.
+    - The user will be able to apply filters to the search function.
+    - The user will be able to add records to the database.
+    - The user will be able to edit database records.
+    - The user will be able to export the data in TSV format.
+    - The user will be able to link external media to field values.
+    - The user will be able to link records between databases.
+    - The user will be able to respond to common error messages.
+url: https://ebp-nor-manual.readthedocs.io/en/latest/
+contributor: Erin Calhoun
+date_created: 2022-10-31
+date_modified: 2023-04-28
+version: 1.1
+---
+# Earth BioGenome Project Norway | EBP-Nor Database manual
 
 ## Overview of the database resource
 The [EBP-Nor database](https://ebp-nor.sfb.uit.no) is a relational database consisting of 5 linked tables (Fig.1). In simple terms, each table can be thought of as a separate spreadsheet with dedicated attribute columns for the type of record to populate it (species, isolates, specimens, sequencing runs, assembled genomes).
