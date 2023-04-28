@@ -216,19 +216,29 @@ Coordinate fields also has 2 inputs, the Latitude and Longitude. The CBF accepts
 
 <img src= "img/ss13-add-delete-button.png" alt="Screenshot 13 - Add sub-value, Add value, and Delete buttons." width=30%/>
 
-When editing the add value button is used for making a list. This can be convenient for situations where more than one information item needs to be stored, like listing 2 names. This function can be used for all attributes. On exporting the data as a tsv these values will be separated by a pipe symbol:
+When editing the add value button is used for making a list. This can be convenient for situations where more than one information item needs to be stored, like listing 2 names. This function can be used for all attributes. 
+
+<img src= "img/ss14-add-2.png" alt="Screenshot 14 - Making a list with the add value button." width=90%/>
+
+On exporting the data as a tsv these values will be separated by a pipe symbol:
 
 !!! example
     Ola Normann|Kari Normann.
 
 Result:
 
+<img src= "img/ss15-result-add.png" alt="Screenshot 15 - Resulting list of add value button." width=90%/>
+
 The Add sub-value function is useful for making lists of hierarchical values, like a sampling location where 3 levels (Region, Municipality, Site) can be listed. On exporting the data as tsv, these values will be separated by the less/more than symbol:
 
 !!! example
     Troms>Tromsø>Kvaløysletta.
 
+<img src= "img/ss16-add-subvalue.png" alt="Screenshot 16 - Resulting hierarchical list of add sub-value button." width=90%/>
+
 The added values and added sub-values can also be combined as shown in the example below. An added value (-) can get added sub-values (>).
+
+<img src= "img/ss17-value-subvalue.png" alt="Screenshot 17 - Added sub-values to values." width=90%/>
 
 #### Delete button
 
@@ -240,6 +250,8 @@ By using the “§” character, most values in a field can be linked with an ex
 
 - [value]§[URL]  
 - Swab sample§https://aemtek.com/wp-content/uploads/2019/10/AEMTEK-Mold-Sampling-Guide.2019.pdf
+
+<img src= "img/ss18-external-linking.png" alt="Screenshot 18 - A value linked to external media." width=90%/>
 
 #### Linking records between databases
 If you have a species and want to associate it with an isolate there are two approaches. The species database is regarded as the top level, and therefore a record with the species name should be present before an isolate record is added to the Isolate database. However, this is not required, only advised. The same goes for the Specimen, Sequencing and Assembly databases (Fig. 1) and can be linked similarly as exemplified here with Species Isolates.
@@ -253,9 +265,25 @@ For this example, first make sure you are logged into the [Isolate database](htt
     
 You might need to reload the table pages to see the new linked record. In the species database it is advised to enter edit mode and add the isolate name for conveniency (see the third illustration below), as it is not automatically carried over in the current CBF version. Linked isolate entries will be listed in the species database table and vice versa in the isolate database (see the last 2 screenshots below).
 
+<img src= "img/ss19-species-linked-record.png" alt="Screenshot 19 - Button to create linked record in the Species database." width=90%/>
+
+<img src= "img/ss20-new-isolate-record.png" alt="Screenshot 20 - Input fields for a new isolate record." width=90%/>
+
+<img src= "img/ss21-isolate-name.png" alt="Screenshot 21 - Enter edit mode to add the isolate name." width=90%/>
+
+Result: Species database and Isolate database tables after following the steps above
+
+<img src= "img/ss22-result-species-db.png" alt="Screenshot 22 - Resulting Species database tables." width=90%/>
+
+<img src= "img/ss23-result-isolate-db.png" alt="Screenshot 23 - Resulting Isolate database tables." width=90%/>
+
 **2 – Creating an isolate record first and then linking it with its corresponding species.**
 
 Enter the [Isolate database](https://ebp-nor.sfb.uit.no/isolates/) and creates an entry from scratch by selecting “New record.” Fill in the mandatory fields and save the record. Now click on the record you just made in the database and enter edit mode. Go to the “Related records” tab and click the “Create linked record” (the chain icon). This brings up an input field associated with the species id number. In this example we are looking up Scapania nimbosa in the [Species database](https://ebp-nor.sfb.uit.no/species/) and find its id to be “000000430”. Enter the complete number in the field, click OK, and then click Save. The record link is created bidirectionally. In the species database it is advised to enter edit mode and add the isolate name for conveniency, as it is not automatically carried over in the current CBF version. Linked isolate entries will be listed in the species database table and vice versa in the isolate database.
+
+<img src= "img/ss24-isolate-linked-record.png" alt="Screenshot 24 - Button to create linked record in the Isolate database." width=90%/>
+
+<img src= "img/ss25-link-by-id.png" alt="Screenshot 25 - Creating a linked record by identifier." width=90%/>
 
 !!! note
     When you are in edit mode you can link records by their identifier numbers, while not in edit mode enables you to create new linked records directly.
