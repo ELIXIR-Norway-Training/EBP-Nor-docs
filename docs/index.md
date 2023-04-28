@@ -271,7 +271,7 @@ You might need to reload the table pages to see the new linked record. In the sp
 
 <img src= "img/ss21-isolate-name.png" alt="Screenshot 21 - Enter edit mode to add the isolate name." width=90%/>
 
-Result: Species database and Isolate database tables after following the steps above
+Result: Species database and Isolate database tables after following the steps above.
 
 <img src= "img/ss22-result-species-db.png" alt="Screenshot 22 - Resulting Species database tables." width=90%/>
 
