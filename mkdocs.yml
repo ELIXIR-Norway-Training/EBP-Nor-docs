@@ -9,3 +9,7 @@ theme: readthedocs
 
 extra_css:
     - css/custom.css
+    
+plugins:
+    - search
+    - meta-descriptions
