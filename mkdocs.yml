@@ -1,12 +1,23 @@
-site_name: ELIXIR-NO Training docs
-markdown_extensions:
-    - admonition
+site_name: EBP-Nor documentation
 
 nav:
     - Home: index.md
+    - Manual: manual.md
 
-theme: readthedocs
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+    - toc.integrate
+  palette:
+    accent: custom
+    primary: black
+
+markdown_extensions:
+    - admonition
 
 extra_css:
     - css/custom.css
-    
