@@ -1,17 +1,8 @@
-# Welcome to MkDocs
+# FAIR documentation for EPB-Nor
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+!!! note
+    Work in progress.
 
-## Commands
+This is a work in progress to FAIRify training materials for ELIXIR Norway and related services.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+The original pdf version of the EPB-Nor database training manual can be viewed at the [ELIXIR-Norway-Training GitHub account](https://github.com/ELIXIR-Norway-Training/manuals/blob/main/databases/manual-db-EBP-Nor.pdf).
