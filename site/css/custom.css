@@ -1,43 +1,15 @@
-.wy-nav-content {
-    max-width: 1200px;
+:root {
+    --md-accent-fg-color: #9f063a;
 }
 
-.image-text-wrapper {
-    display: flex;
-    align-items: flex-start;
-}
-
-.image-container {
-    flex: 0 0 300px;
-    width: 300px;
+.md-grid {
+	max-width: 70rem;
 }
 
 .image-border {
     border-width: 1px;
     border-style: solid;
     border-color: black;
-}
-
-.text-boxes-container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    align-items: flex-start;
-}
-
-.text-box {
-    border: 1px solid black;
-    padding: 0.5em;
-    width: 300px;
-    box-sizing: border-box;
-}
-
-.text-box p {
-    margin: 0;
-}
-
-.text-box + .text-box {
-    margin-top: 20px;
 }
 
 .caption-box {
