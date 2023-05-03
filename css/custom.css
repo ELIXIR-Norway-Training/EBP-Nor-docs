@@ -1,0 +1,37 @@
+:root {
+    --md-accent-fg-color: #9f063a;
+}
+
+.md-grid {
+	max-width: 70rem;
+}
+
+.image-border {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.caption-box {
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+.caption-box p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.notbold {
+    font-weight: normal;
+}
+
+@media (max-width: 767px) {
+    .image-text-wrapper {
+        flex-direction: column;
+    }
+
+    .text-boxes-container {
+        margin-top: 10px;
+    }
+}
