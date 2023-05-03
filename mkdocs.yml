@@ -21,3 +21,5 @@ markdown_extensions:
 
 extra_css:
     - css/custom.css
+
+docs_dir: docs
