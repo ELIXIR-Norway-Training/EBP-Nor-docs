@@ -1,4 +1,5 @@
 site_name: EBP-Nor documentation
+site_url: https://erincalhoun.github.io/ebp-nor-manual/
 
 nav:
     - Home: index.md

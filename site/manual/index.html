@@ -8,12 +8,14 @@
       
       
       
+        <link rel="canonical" href="https://erincalhoun.github.io/ebp-nor-manual/manual/">
+      
       
         <link rel="prev" href="..">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.6">
     
     
       
@@ -510,7 +512,7 @@
 <p>The <a href="https://ebp-nor.sfb.uit.no">EBP-Nor database</a> is a relational database consisting of 5 linked tables (Fig.1). In simple terms, each table can be thought of as a separate spreadsheet with dedicated attribute columns for the type of record to populate it (species, isolates, specimens, sequencing runs, assembled genomes).</p>
 <div class="image-text-wrapper">
     <div class="image-container">
-        <img src= "img/fig1-db-relational-structure.png" alt="Figure 1 - EBP-Nor database relational structure"  />
+        <img src="../img/fig1-db-relational-structure.png" alt="Figure 1 - EBP-Nor database relational structure"  />
     </div>
 </div>
 
@@ -571,7 +573,7 @@ Assembly name: ebp-nor_asm_mrantar1_muscle
 • terje.klemetsen@uit.no<br />
 • nils-peder.willassen@uit.no<br />
 • igor.molchanov@uit.no  </p>
-<p><img src= "img/fig2-login.png" alt="Figure 2 - Life Science login button" width=40%/></p>
+<p><img src= "../img/fig2-login.png" alt="Figure 2 - Life Science login button" width=40%/></p>
 <div class="caption-box" style="margin-top: 1%; width: 40%">
     <p>Fig. 2 - Life Science login button</p>
 </div>
@@ -579,7 +581,7 @@ Assembly name: ebp-nor_asm_mrantar1_muscle
 <h3 id="cbf-functionalities-as-writer">CBF functionalities as writer</h3>
 <h4 id="navigation">Navigation</h4>
 <p>The Contextual biodata framework (CBF) is the system which provides all functionalities in the databases and the links connecting them as a relational database. Its foundation is the MongoDB database. Fig. 3 below shows the basic functions for navigating the databases. Clicking on a listed record brings up all the attributes related to it.</p>
-<p><img src="img/fig3-main-website-functions.png" alt="Figure 3 - Screenshot of website with labeled website functionalities" width=90% class="image-border" />  </p>
+<p><img src="../img/fig3-main-website-functions.png" alt="Figure 3 - Screenshot of website with labeled website functionalities" width=90% class="image-border" />  </p>
 <div class="caption-box" style="margin-top: 1%; width: 90%;">
     <p>Fig. 3 - Main website functionalities. <span class='notbold'>A) Table configuration, data download, TSV upload. B) The current version of the database and drop-down choices for which version to show. If logged in as writer, the draft will be shown in italics. C) Quick text search (type in the field and hit enter), advanced text search (click the magnifier button). D) Switch between table view, graph view and configuration (owner privileges required). E) Log in/out, register, and apply for database role. F) Navigation between databases.</span></p>
 </div>
@@ -594,7 +596,7 @@ Assembly name: ebp-nor_asm_mrantar1_muscle
 <li>Middle: The type of filter (equals, regex, before and after (for date fields), ontologies/compact IRI, CV (Controlled Vocabulary) and so forth.</li>
 <li>Lower: Input and/or secondary options for the filter type. E.g., case sensitive, what ontology, what CV.</li>
 </ol>
-<p><img src="img/ss1-filter-by-scientific-name.png" alt="Screenshot 1 - A simple example of filtering the Scientific name attribute only." width=90% /> </p>
+<p><img src="../img/ss1-filter-by-scientific-name.png" alt="Screenshot 1 - A simple example of filtering the Scientific name attribute only." width=90% /> </p>
 <p>An uncomplicated guide to make a filter showing the 2 genera Saxifraga and Labrus:</p>
 <ul>
 <li>Click on the magnifier button in the species database.</li>
@@ -603,9 +605,9 @@ Assembly name: ebp-nor_asm_mrantar1_muscle
 <li>Your filter should look like the screenshot below. Click Apply to filter the table accordingly.</li>
 </ul>
 <p><em>Insensitive search does not consider caps. And in regex the asterisk (*) means that anything proceeding does not count and will show up after applying the filter.</em></p>
-<p><img src="img/ss2-screenshot-of-filter.png" alt="Screenshot 2 - Filter showing the 2 genera Saxifraga and Labrus." width=90% />  </p>
+<p><img src="../img/ss2-screenshot-of-filter.png" alt="Screenshot 2 - Filter showing the 2 genera Saxifraga and Labrus." width=90% />  </p>
 <p>Result:</p>
-<p><img src="img/ss3-result-filter-applied.png" alt="Screenshot 3 - Result after applying the filter." width=90% />  </p>
+<p><img src="../img/ss3-result-filter-applied.png" alt="Screenshot 3 - Result after applying the filter." width=90% />  </p>
 <h4 id="adding-records">Adding records</h4>
 <p>The CBF enables you to add a record on the fly using the <em>(+) Add data &gt; New record</em> (Fig. 4). Doing so will bring up the attributes schema ready to be filled. </p>
 <div class="admonition note">
@@ -614,18 +616,18 @@ Assembly name: ebp-nor_asm_mrantar1_muscle
 </div>
 <p>An alternative way to add new entries is through the preparation and uploading of a tab separated (tsv) file (Fig. 4 and 5). Upload using the create function requires the use of minimum 1 attribute held by the database. The “id” attribute must be omitted as this is managed automatically by CBF. The tsv column names must use the attributes associated with the given database and the attribute SHORT NAME as listed in the EBP-Nor manifest. An example can be seen in the table screenshot below. For simplicity, one can download a template tsv (Fig. 4, second button from top) with all assigned attribute names for the given database.</p>
 <p>The Sampling schema has output sheets for isolate and specimen data. If the sheet is filled in excel it can easily be uploaded as tsv files to make new records with the accompanying metadata.</p>
-<p><img src= "img/fig4-adding-data.png" alt="Figure 4 - Screenshot showing 'add data' button." width=40%/></p>
+<p><img src= "../img/fig4-adding-data.png" alt="Figure 4 - Screenshot showing 'add data' button." width=40%/></p>
 <div class="caption-box" style="margin-top: 1%; width: 40%">
     <p>Fig. 4 - Adding data. New record and TSV file upload.</p>
 </div>
 
-<p><img src= "img/fig5-uploading-tsv.png" alt="Figure 5 - Screenshot showing where you create or update records." width=70%/></p>
+<p><img src= "../img/fig5-uploading-tsv.png" alt="Figure 5 - Screenshot showing where you create or update records." width=70%/></p>
 <div class="caption-box" style="margin-top: 1%; width: 70%">
     <p>Fig. 5 - Uploading a TSV to create new records or upload to overwrite/update existing records.</p>
 </div>
 
 <h4 id="editing-in-a-spreadsheet">Editing in a spreadsheet.</h4>
-<p><img src= "img/fig6-edit-spreadsheet.png" alt="Figure 6 - View of a portion of a database table in Excel." width=90%/></p>
+<p><img src= "../img/fig6-edit-spreadsheet.png" alt="Figure 6 - View of a portion of a database table in Excel." width=90%/></p>
 <div class="caption-box" style="margin-top: 1%; width: 90%">
     <p>Fig. 6 - Editing the database table in a spreadsheet.</p>
 </div>
@@ -633,33 +635,33 @@ Assembly name: ebp-nor_asm_mrantar1_muscle
 <p>You might want to download the whole database table as tsv for editing multiple records in one go in programs like Excel. After finishing your changes in Excel, you can export as tsv and upload this to the database using the “Update existing” function. This will overwrite/update the records you upload. Say that you want to modify 20 records, you can download the whole database and remove all but the 20 records you want to work with. The “id” column must remain in the tsv for this to work, the other columns are optional. If you remove the “id” column the CBF believes these are new entries instead. Therefore the “id” column must be present when modifying a tsv, while it must be excluded when adding multiple new entries.</p>
 <h4 id="editing-a-record">Editing a record</h4>
 <p>Clicking on any listed record in the database brings up the record view (Fig. 7). It is worth noting that all attributes can be configured by a member with owner privileges (Change attribute name, tooltip, tab structure, arrangement of attributes, field type, etc.). Anyone with writer permission can edit a record by entering edit mode (Fig. 7A middle button).</p>
-<p><img src= "img/fig7-record-view.png" alt="Figure 7 - Record view of an entry in the Isolate database." width=90%/></p>
+<p><img src= "../img/fig7-record-view.png" alt="Figure 7 - Record view of an entry in the Isolate database." width=90%/></p>
 <div class="caption-box" style="margin-top: 1%; width: 90%">
     <p>Fig. 7 - Record view of an example entry in the Isolate database. <span class='notbold'>A) Menu for downloading the entry metadata, enter edit mode, delete the entry. B) The header is a combination of the isolate name and the id attribute. C) Each attribute has a tooltip for further description.</span></p>
 </div>
 
-<p><img src= "img/fig7a-edit-button.png" alt="Figure 7a - Edit button in a record." width=40%/></p>
+<p><img src= "../img/fig7a-edit-button.png" alt="Figure 7a - Edit button in a record." width=40%/></p>
 <div class="caption-box" style="margin-top: 1%; width: 40%">
     <p>Fig. 7a - Opening a record and you will have access to the Edit button if you are logged in with writer privileges.</p>
 </div>
 
 <h4 id="field-types">Field types</h4>
 <p>In edit mode the simplest field types are free text and are recognized by not having any dropdown choices (controlled vocabulary), nor ontology associated. However, free text fields can be mandatory as shown below, preventing the record from being saved if not filled.</p>
-<p><img src= "img/ss4-mandatory-free-text.png" alt="Screenshot 4 - Mandatory free text field." width=90%/></p>
+<p><img src= "../img/ss4-mandatory-free-text.png" alt="Screenshot 4 - Mandatory free text field." width=90%/></p>
 <p>Controlled vocabularies, shown below, are pre-defined choices and are recognized by a small down-arrow on the field's right-hand side.</p>
-<p><img src= "img/ss5-controlled-vocab.png" alt="Screenshot 5 - Controlled vocabulary pre-defined choices." width=90%/></p>
+<p><img src= "../img/ss5-controlled-vocab.png" alt="Screenshot 5 - Controlled vocabulary pre-defined choices." width=90%/></p>
 <p>Date fields follow the ISO8601 format and accept year, month, date in truncated variants.</p>
-<p><img src= "img/ss6-date-field.png" alt="Screenshot 6 - Date fields." width=90%/></p>
+<p><img src= "../img/ss6-date-field.png" alt="Screenshot 6 - Date fields." width=90%/></p>
 <p>The <em>environment material</em> and <em>habitat</em> attributes are examples where ontology use is supported. Ontologies are recognized by 2 fields, a drop-down menu, and an input field. By selecting the “-” no ontology will be used, and the input field works as a free text field. By selecting the “envo” you can choose to use the Environment Ontology (ENVO) and input identifiers representing a class term. E.g., to link the envo class <a href="http://purl.obolibrary.org/obo/ENVO_01001805">“temperate forest“</a> you must input the corresponding identifier “01001805” and save the record. </p>
-<p><img src= "img/ss7-envo.png" alt="Screenshot 7 - Selecting the envo ontology." width=90%/></p>
-<p><img src= "img/ss8-envo-id.png" alt="Screenshot 8 - envo identifier field." width=90%/></p>
+<p><img src= "../img/ss7-envo.png" alt="Screenshot 7 - Selecting the envo ontology." width=90%/></p>
+<p><img src= "../img/ss8-envo-id.png" alt="Screenshot 8 - envo identifier field." width=90%/></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Use <a href="https://ontobee.org/ontology/ENVO">Ontobee</a> or other envo ontology search tools to find classes and their identifiers. This will make CBF collect the ontology class information and make a link to ebi.ac.uk/ols for the given term as well as displaying a tooltip containing the term definition.</p>
 </div>
 <p>Result:</p>
-<p><img src= "img/ss9-environment-material.png" alt="Screenshot 9 - Result of envo search: Temperate forest." width=90%/></p>
-<p><img src= "img/ss10-tooltip-definition.png" alt="Screenshot 10 - Tooltip display." width=90%/></p>
+<p><img src= "../img/ss9-environment-material.png" alt="Screenshot 9 - Result of envo search: Temperate forest." width=90%/></p>
+<p><img src= "../img/ss10-tooltip-definition.png" alt="Screenshot 10 - Tooltip display." width=90%/></p>
 <p>Ontologies can also be used when referring to publications and personnel. For publications Digital Object Identifiers (DOI) and PubMed identification numbers (PMID) can be used, and ORCIDs (Open Researcher and Contributor Identifier) can be used for registered people. These can be selected similarly as described above for the envo ontology. By inputting values (as the listed examples below) will provide links for attributes like <em>original publication</em> and <em>Collector ORCID</em>. Links will lead to the DOI target, PubMed page or ORCID page.</p>
 <ul>
 <li><strong>DOI example:</strong> 10.1002/ece3.5991</li>
@@ -673,26 +675,26 @@ Assembly name: ebp-nor_asm_mrantar1_muscle
 <p>63.511722, 10.485166 is more accurate than 63.5, 10.5</p>
 <p><img src= "/img/ss11-sampling-coordinates.png" alt="Screenshot 11 - Sampling coordinates fields." width=90%/></p>
 </div>
-<p><img src= "img/ss12-result-map.png" alt="Screenshot 12 - Coordinate map showing indicated location in Norway." width=40%/></p>
+<p><img src= "../img/ss12-result-map.png" alt="Screenshot 12 - Coordinate map showing indicated location in Norway." width=40%/></p>
 <h4 id="values-added-values-added-sub-values-delete">Values, Added values, Added sub-values, Delete</h4>
-<p><img src= "img/ss13-add-delete-button.png" alt="Screenshot 13 - Add sub-value, Add value, and Delete buttons." width=30%/></p>
+<p><img src= "../img/ss13-add-delete-button.png" alt="Screenshot 13 - Add sub-value, Add value, and Delete buttons." width=30%/></p>
 <p>When editing the add value button is used for making a list. This can be convenient for situations where more than one information item needs to be stored, like listing 2 names. This function can be used for all attributes. </p>
-<p><img src= "img/ss14-add-2.png" alt="Screenshot 14 - Making a list with the add value button." width=90%/></p>
+<p><img src= "../img/ss14-add-2.png" alt="Screenshot 14 - Making a list with the add value button." width=90%/></p>
 <p>On exporting the data as a tsv these values will be separated by a pipe symbol:</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p>Ola Normann|Kari Normann.</p>
 </div>
 <p>Result:</p>
-<p><img src= "img/ss15-result-add.png" alt="Screenshot 15 - Resulting list of add value button." width=90%/></p>
+<p><img src= "../img/ss15-result-add.png" alt="Screenshot 15 - Resulting list of add value button." width=90%/></p>
 <p>The Add sub-value function is useful for making lists of hierarchical values, like a sampling location where 3 levels (Region, Municipality, Site) can be listed. On exporting the data as tsv, these values will be separated by the less/more than symbol:</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p>Troms&gt;Tromsø&gt;Kvaløysletta.</p>
 </div>
-<p><img src= "img/ss16-add-subvalue.png" alt="Screenshot 16 - Resulting hierarchical list of add sub-value button." width=90%/></p>
+<p><img src= "../img/ss16-add-subvalue.png" alt="Screenshot 16 - Resulting hierarchical list of add sub-value button." width=90%/></p>
 <p>The added values and added sub-values can also be combined as shown in the example below. An added value (-) can get added sub-values (&gt;).</p>
-<p><img src= "img/ss17-value-subvalue.png" alt="Screenshot 17 - Added sub-values to values." width=90%/></p>
+<p><img src= "../img/ss17-value-subvalue.png" alt="Screenshot 17 - Added sub-values to values." width=90%/></p>
 <h4 id="delete-button">Delete button</h4>
 <p>The delete button is used to clear the input field for any data, but if used on an added value or sub-value it will remove it. Note, clearing the main value will clear all added values and sub-values.</p>
 <h4 id="linking-external-media">Linking external media</h4>
@@ -701,7 +703,7 @@ Assembly name: ebp-nor_asm_mrantar1_muscle
 <li>[value]§[URL]  </li>
 <li>Swab sample§https://aemtek.com/wp-content/uploads/2019/10/AEMTEK-Mold-Sampling-Guide.2019.pdf</li>
 </ul>
-<p><img src= "img/ss18-external-linking.png" alt="Screenshot 18 - A value linked to external media." width=90%/></p>
+<p><img src= "../img/ss18-external-linking.png" alt="Screenshot 18 - A value linked to external media." width=90%/></p>
 <h4 id="linking-records-between-databases">Linking records between databases</h4>
 <p>If you have a species and want to associate it with an isolate there are two approaches. The species database is regarded as the top level, and therefore a record with the species name should be present before an isolate record is added to the Isolate database. However, this is not required, only advised. The same goes for the Specimen, Sequencing and Assembly databases (Fig. 1) and can be linked similarly as exemplified here with Species Isolates.</p>
 <p><strong>1 – Create the isolate record from the chosen species in the <a href="https://ebp-nor.sfb.uit.no/species/">Species database</a>.</strong></p>
@@ -711,28 +713,28 @@ Assembly name: ebp-nor_asm_mrantar1_muscle
 <p>If not logged into the Isolate database (or the database you are about to create a new record in), you will get an error message! A good practice is to first fill the mandatory fields only before saving. </p>
 </div>
 <p>You might need to reload the table pages to see the new linked record. In the species database it is advised to enter edit mode and add the isolate name for conveniency (see the third illustration below), as it is not automatically carried over in the current CBF version. Linked isolate entries will be listed in the species database table and vice versa in the isolate database (see the last 2 screenshots below).</p>
-<p><img src= "img/ss19-species-linked-record.png" alt="Screenshot 19 - Button to create linked record in the Species database." width=90%/></p>
-<p><img src= "img/ss20-new-isolate-record.png" alt="Screenshot 20 - Input fields for a new isolate record." width=90%/></p>
-<p><img src= "img/ss21-isolate-name.png" alt="Screenshot 21 - Enter edit mode to add the isolate name." width=90%/></p>
+<p><img src= "../img/ss19-species-linked-record.png" alt="Screenshot 19 - Button to create linked record in the Species database." width=90%/></p>
+<p><img src= "../img/ss20-new-isolate-record.png" alt="Screenshot 20 - Input fields for a new isolate record." width=90%/></p>
+<p><img src= "../img/ss21-isolate-name.png" alt="Screenshot 21 - Enter edit mode to add the isolate name." width=90%/></p>
 <p>Result: Species database and Isolate database tables after following the steps above.</p>
-<p><img src= "img/ss22-result-species-db.png" alt="Screenshot 22 - Resulting Species database tables." width=90%/></p>
-<p><img src= "img/ss23-result-isolate-db.png" alt="Screenshot 23 - Resulting Isolate database tables." width=90%/></p>
+<p><img src= "../img/ss22-result-species-db.png" alt="Screenshot 22 - Resulting Species database tables." width=90%/></p>
+<p><img src= "../img/ss23-result-isolate-db.png" alt="Screenshot 23 - Resulting Isolate database tables." width=90%/></p>
 <p><strong>2 – Creating an isolate record first and then linking it with its corresponding species.</strong></p>
 <p>Enter the <a href="https://ebp-nor.sfb.uit.no/isolates/">Isolate database</a> and creates an entry from scratch by selecting “New record.” Fill in the mandatory fields and save the record. Now click on the record you just made in the database and enter edit mode. Go to the “Related records” tab and click the “Create linked record” (the chain icon). This brings up an input field associated with the species id number. In this example we are looking up Scapania nimbosa in the <a href="https://ebp-nor.sfb.uit.no/species/">Species database</a> and find its id to be “000000430”. Enter the complete number in the field, click OK, and then click Save. The record link is created bidirectionally. In the species database it is advised to enter edit mode and add the isolate name for conveniency, as it is not automatically carried over in the current CBF version. Linked isolate entries will be listed in the species database table and vice versa in the isolate database.</p>
-<p><img src= "img/ss24-isolate-linked-record.png" alt="Screenshot 24 - Button to create linked record in the Isolate database." width=90%/></p>
-<p><img src= "img/ss25-link-by-id.png" alt="Screenshot 25 - Creating a linked record by identifier." width=90%/></p>
+<p><img src= "../img/ss24-isolate-linked-record.png" alt="Screenshot 24 - Button to create linked record in the Isolate database." width=90%/></p>
+<p><img src= "../img/ss25-link-by-id.png" alt="Screenshot 25 - Creating a linked record by identifier." width=90%/></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When you are in edit mode you can link records by their identifier numbers, while not in edit mode enables you to create new linked records directly.</p>
 </div>
 <h3 id="error-messages">Error messages</h3>
 <p>If editing or adding data in a database while not logged in, will result in a 400-error. This can happen if you create a new isolate record from the Species database (See option 1 for linking records above) but you are not logged into the Isolate database.</p>
-<p><img src= "img/error0.png" alt="JavaScript 400-error" width=40%/></p>
+<p><img src= "../img/error0.png" alt="JavaScript 400-error" width=40%/></p>
 <p>Errors can occur when using the quick search function (2022-06-07). This is currently a reported bug in the CBF which is to be corrected.</p>
-<p><img src= "img/error1.png" alt="Internal Service Error - Query failed with error code 2" width=40%/></p>
-<p><img src= "img/error2.png" alt="Internal Service Error - Query failed with error code 51091" width=40%/></p>
+<p><img src= "../img/error1.png" alt="Internal Service Error - Query failed with error code 2" width=40%/></p>
+<p><img src= "../img/error2.png" alt="Internal Service Error - Query failed with error code 51091" width=40%/></p>
 <p>Save often! If you have been inactive on the site for a while you might get the error below. A sort of halfway logged-out state. Reload the page in your browser to correct it. Work is ongoing to improve CBF on this issue by moving it to NIRD for greater stability.</p>
-<p><img src= "img/error3.png" alt="Internal Service Error - Bad User Info response" width=40%/></p>
+<p><img src= "../img/error3.png" alt="Internal Service Error - Bad User Info response" width=40%/></p>
 
 
 
