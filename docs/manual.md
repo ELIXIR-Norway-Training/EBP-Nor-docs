@@ -20,7 +20,7 @@
                 "name": "EBP-Nor",
                 "description": "EBP-Nor portal for Species, Isolate, Specimen, Sequencing, and Assembly databases.",
                 "url": "https://ebp-nor.sfb.uit.no/"
-            }
+            },
             {
                 "@type": "DefinedTerm",
                 "@id": "http://edamontology.org/data_3707",
@@ -80,7 +80,7 @@
                 "@type": "Project",
                 "@id": "https://www.earthbiogenome.org/",
                 "name": "Earth BioGenome Project",
-                "description": "The Earth BioGenome Project (EBP) aims to sequence all eukaryotic genomes over 10 years to characterise and preserve biodiversity."
+                "description": "The Earth BioGenome Project (EBP) aims to sequence all eukaryotic genomes over 10 years to characterise and preserve biodiversity.",
                 "identifier": "DOI:10.1073/pnas.1720115115",
                 "url": "https://www.earthbiogenome.org/"
             }
@@ -98,7 +98,7 @@
             "The user will be able to link records between databases.",
             "The user will be able to respond to common error messages."
         ],
-        "url": ""
+        "url": "https://elixir-norway-training.github.io/EBP-Nor-docs/manual/",
         "accessibilitySummary": "Short descriptions are present for visual elements.",
         "contributor": [
             {
